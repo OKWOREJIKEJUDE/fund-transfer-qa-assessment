@@ -59,3 +59,5 @@ export const duplicateTransfer = {
   amount: 500,
   currency: 'GBP',
 };
+
+validTransfer
