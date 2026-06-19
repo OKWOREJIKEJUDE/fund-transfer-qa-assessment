@@ -6,45 +6,33 @@ export const validTransfer = {
 };
 
 export const zeroAmount = {
-  senderWalletId: 'WALLET001',
-  receiverWalletId: 'WALLET002',
+  ...validTransfer,
   amount: 0,
-  currency: 'GBP',
 };
 
 export const negativeAmount = {
-  senderWalletId: 'WALLET001',
-  receiverWalletId: 'WALLET002',
+  ...validTransfer,
   amount: -100,
-  currency: 'GBP',
 };
 
 export const unsupportedCurrency = {
-  senderWalletId: 'WALLET001',
-  receiverWalletId: 'WALLET002',
-  amount: 500,
+  ...validTransfer,
   currency: 'JPY',
 };
 
 export const insufficientBalance = {
+  ...validTransfer,
   senderWalletId: 'WALLET_EMPTY',
-  receiverWalletId: 'WALLET002',
-  amount: 500,
-  currency: 'GBP',
 };
 
 export const aboveMaxLimit = {
-  senderWalletId: 'WALLET001',
-  receiverWalletId: 'WALLET002',
+  ...validTransfer,
   amount: 10000.01,
-  currency: 'GBP',
 };
 
 export const requiresApproval = {
-  senderWalletId: 'WALLET001',
-  receiverWalletId: 'WALLET002',
+  ...validTransfer,
   amount: 5000.01,
-  currency: 'GBP',
 };
 
 export const missingAmount = {
@@ -54,10 +42,5 @@ export const missingAmount = {
 };
 
 export const duplicateTransfer = {
-  senderWalletId: 'WALLET001',
-  receiverWalletId: 'WALLET002',
-  amount: 500,
-  currency: 'GBP',
+  ...validTransfer,
 };
-
-validTransfer

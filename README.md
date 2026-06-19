@@ -1,4 +1,4 @@
-# Fund Transfer API — QA Assessment
+# Fund Transfer API — My QA Assessment
 
 ## Overview
 
@@ -124,7 +124,6 @@ npx playwright show-report ../reports
 ### Mandatory Scenarios
 
 | Test ID | Scenario | Expected Status |
-|---|---|---|
 | TC001 | Successful transfer with valid payload | 200 OK |
 | TC002 | Transfer fails when amount is zero | 400 Bad Request |
 | TC003 | Transfer fails when amount is negative | 400 Bad Request |
@@ -140,8 +139,8 @@ npx playwright show-report ../reports
 
 | Test ID | Amount | Expected Outcome |
 |---|---|---|
-| BVA001 | £0 | Rejected — amount must be greater than 0 |
-| BVA002 | £1 | Accepted — minimum valid amount |
+| BVA001 | £0 | Rejected — amount must be greater than 0 
+| BVA002 | £1 | Accepted — minimum valid amount 
 | BVA003 | £4,999.99 | Accepted — no approval required |
 | BVA004 | £5,000 | Accepted — no approval required |
 | BVA005 | £5,000.01 | Accepted — approval required |
