@@ -13,11 +13,10 @@ import {
 } from '../fixtures/test-data.js';
 
 declare const process: any;
-
 const BASE_URL = process.env.BASE_URL || 'https://api.fintech-sandbox.com';
 
-test.describe('Fund Transfer API — Mandatory Scenarios', () => {
 
+test.describe('Fund Transfer API — Mandatory Scenarios', () => {
   test('TC001 — Successful transfer', async ({ request }) => {
     const client = new TransferApiClient(request, BASE_URL);
     const response = await client.createTransfer(validTransfer);

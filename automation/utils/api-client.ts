@@ -1,5 +1,4 @@
 import { APIRequestContext } from '@playwright/test';
-
 export class TransferApiClient {
   constructor(
     private request: APIRequestContext,

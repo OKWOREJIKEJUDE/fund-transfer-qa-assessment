@@ -78,7 +78,7 @@ Add the following values to the `.env` file:
 
 BASE_URL=https://api.fintech-sandbox.com
 
-AUTH_TOKEN=your-auth-token-here
+AUTH_TOKEN="   "
 
 Replace the values with the actual API base URL and authentication token for your environment.
 
